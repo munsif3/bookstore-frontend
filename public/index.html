@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="MainApp">
+
+<head>
+    <base href="/app/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OPD System</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="assets/dist/css/skins/skin-green.min.css">
+    <!--Date Picker-->
+    <link rel="stylesheet" href="assets/plugins/datepicker/datepicker3.css">
+    <link rel="stylesheet" href="assets/plugins/daterangepicker/daterangepicker.css">
+
+</head>
+
+<body class="hold-transition skin-green sidebar-mini fixed">
+
+<div class="wrapper fixed" ui-view>
+</div>
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="assets/bootstrap/js/bootstrap.js"></script>
+<!-- AdminLTE App -->
+<script src="assets/dist/js/app.js"></script>
+<!--SlimScroll-->
+<script src="assets/plugins/slimScroll/jquery.slimscroll.js"></script>
+<!--ChartJS-->
+<script src="assets/plugins/chartjs/Chart.js"></script>
+<!--DateRange Picker-->
+<script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+<!--Date Picker-->
+<script src="assets/plugins/datepicker/bootstrap-datepicker.js"></script>
+
+
+<!--Angular-->
+<script src="mods/angular/angular.js"></script>
+<!--Angular Route-->
+<script src="mods/angular-route/angular-route.js"></script>
+<!--Angular UI Router-->
+<script src="mods/angular-ui-router/release/angular-ui-router.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.6.0/angular-local-storage.js"></script>
+
+<!--Custom JS-->
+<!--Dashboard Management-->
+<!--1. Modules-->
+<script src="modules/app.module.js"></script>
+<script src="modules/user.module.js"></script>
+<script src="modules/authentication.module.js"></script>
+<!--2. Routes-->
+<script src="routes/app.routes.js"></script>
+<!--3. Controllers-->
+<script src="controllers/user.controller.js"></script>
+<script src="controllers/authentication.controller.js"></script>
+<script src="controllers/dashboard.controller.js"></script>
+<!--4. Services-->
+<script src="services/user.services.js"></script>
+<script src="services/authentication.service.js"></script>
+
+</body>
+
+</html>

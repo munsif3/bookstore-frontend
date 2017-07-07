@@ -1,0 +1,47 @@
+<div class="hold-transition login-page jumbotron">
+    <script>
+        function assignUser() {
+            var role = document.getElementById("user").value;
+            console.log(role);
+            localStorage.__loggedUser = role;
+        }
+    </script>
+    <div class="login-box">
+        <div class="login-logo">
+            <img src="assets/dist/img/opd.png" alt="OPD Module" width="128" height="128">
+        </div>
+        <!-- /.login-logo -->
+        <div class="login-box-body">
+            <form ng-controller="AuthController" ng-submit="login(credentials)">
+
+                <div class="form-group has-feedback form-group">
+                    <input id="user" type="text" class="form-control" placeholder="Username"
+                           ng-model="credentials.username">
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+
+                <div class="form-group has-feedback form-group">
+                    <input id="pwd" type="password" class="form-control" placeholder="Password"
+                           ng-model="credentials.password">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+
+                <div class="alert">{{error}}</div>
+                <div class="row">
+
+                    <!-- /.col -->
+                    <br>
+                    <div class="col-xs-12">
+                        <button class="btn btn-warning btn-lg center-block" onclick="assignUser()" type="submit">Login
+                        </button>
+                    </div>
+                    <!-- /.col -->
+                    <br><br>
+                </div>
+            </form>
+            <!--<a href="views/db-register-form.html" class="text-center">Register Account</a>-->
+        </div>
+        <!-- /.login-box-body -->
+    </div>
+    <!-- /.login-box -->
+</div>
