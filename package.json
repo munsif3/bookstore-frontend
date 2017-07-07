@@ -1,15 +1,15 @@
 {
-  "name": "opd-frontend-angular",
+  "name": "bookstore-angular",
   "version": "1.0.0",
-  "description": "Angular Client for the OPD Module",
+  "description": "Angular Client for the Bookstore Module",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "opd"
+    "book"
   ],
-  "author": "Group of Four",
+  "author": "munsif aka emcube",
   "license": "ISC",
   "dependencies": {
     "bower": "^1.8.0",
